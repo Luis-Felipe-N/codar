@@ -1,0 +1,54 @@
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+/* LOGO */
+.codar {
+    font-size: 40px;
+    color: #D6000D;
+    font-weight: 700;
+}
+/* FIM LOGO */
+
+/* MENU */
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu ul li a {
+    padding: 10px 20px;
+    color: #000;
+}
+.login {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #D6000D;
+    transition: 0.5s;
+    
+}
+.menu .login li a {
+    color: #fff;
+}
+.menu .login:hover {
+    background-color: #a3010c;
+    transform: rotate(5deg);
+}
+
+@media screen and (max-width: 585px) {
+    
+    header {
+        flex-direction: column;
+    }
+    .menu {
+        margin-top: 5px;
+    }
+    .login {
+        display: none;
+    }
+
+}

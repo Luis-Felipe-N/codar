@@ -1,0 +1,91 @@
+.hospedagem {
+
+    margin: 150px auto;
+}
+.hospedagem-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.hospedagem-img img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.content-text li {
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+}
+.content-text i {
+    margin: 0 5px ;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #D6000D;
+    font-size: small;
+}
+
+/* HOSPEDAGEM CONTATO */
+.hospedagem-contato {
+    margin-left: 150PX;
+}
+.hospedagem-contato p {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.hospedagem-contato input {
+    border: none;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    margin: 10px 0;
+    padding: 0 5px;
+    width: 170px;
+    height: 35px;
+}
+.hospedagem-contato button {
+    border: none;
+    border-radius: 5px;
+    background-color: #d6000d;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.2s;
+}
+
+.informacao button:hover {
+    background-color: #a3010c;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 585px) {
+    .hospedagem-content {
+        flex-direction: column-reverse;
+    }
+
+    .hospedagem img {
+        max-width: 60%;
+        margin: 0 20%;
+    }
+
+    .content-text li {
+        margin: 20px 0;
+    }
+
+    .hospedagem-contato {
+        margin: 20px 0;
+    }
+    .hospedagem-contato p{
+        text-align: center;
+    }
+    .hospedagem-contato .enviar-hospedagem {
+        width: 200px;
+        margin: 0 auto;
+    }
+}

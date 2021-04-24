@@ -1,0 +1,63 @@
+#cards {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+}
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    background-color: #DCDCDC;
+    width: 100%;
+    /* height: 100%; */
+    padding: 20px 20px;
+}
+.perfil {
+    background-color: #d6000d;
+    background-size: cover;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+}
+.p1 {
+    background-image: url(/assets/perfil.jpg);
+    background-size: cover;
+}
+
+.p2 {
+    background-image: url(/assets/perfil-2.jpg);
+    background-size: cover;
+}
+.info {
+    float: right;
+    width: 70%;
+}
+@media (max-width: 766px){
+    #cards {
+        flex-wrap: wrap ;
+    }
+}
+@media (max-width: 585px) {
+    
+    .card {
+        width: 100%;
+    }
+    
+    .info p{
+        font-size: 14px;
+        margin-bottom: 2%;
+
+    }
+    .info h1 {
+        font-size: 25px;
+    }
+    .info h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
